@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "reset.css";
+/* <link href="css/styles.css" rel="stylesheet" /> */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+div {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  background-color: aqua;
+}
+#section1 {
+  height: 1000px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 1000px;
+  background-color: yellow;
+}
+
+#section {
+  margin-top: 100px;
+}
+
+#section3 {
+  height: 1000px;
+  background-color: tomato;
+}

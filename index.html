@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 100,
+              },
+              800
+            );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <a href="#section1">Section1</a>
+      </div>
+      <div>
+        <a href="#section2">Section2</a>
+      </div>
+      <div>
+        <a href="#section3">Section3</a>
+      </div>
+    </div>
+    <div id="section">
+      <div class="main" id="section1">
+        <h2>Section 1</h2>
+      </div>
+      <div class="main" id="section2">
+        <h2>Section 2</h2>
+      </div>
+      <div class="main" id="section3">
+        <h2>Section 3</h2>
+      </div>
+    </div>
+  </body>
+</html>
